@@ -1,0 +1,190 @@
+body{
+    background-color:rgb(224, 224, 224);
+}
+
+.hser-table{
+    position: fixed;
+    margin-left: -37%;
+    
+    /* transform: translateX(-71.5%); */
+}
+.hser-tbody{
+    cursor: pointer;
+}
+.dataTable-wrapper{
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.hser-slide-right-table{
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+
+@keyframes slideRight {
+    from {
+        margin-left: -37%;
+    }
+    to {
+        margin-left: 0%;
+      }
+  }
+
+.hser-slide-left-table{
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: -37%;
+      }
+  }
+
+.hser_btn_to_left{
+    visibility: hidden;
+}
+
+.hser-card{
+    position: fixed;
+    margin-left: 20%;
+}
+
+.hser-slide-right-card{
+    animation-name: slideRightCard;
+    animation-duration: 2s;
+}
+
+@keyframes slideRightCard {
+    from {
+        margin-left: 17%;
+    }
+    to {
+        margin-left: 1%;
+      }
+  }
+
+.hser-slide-left-card{
+    animation-name: slideLeftCard;
+    animation-duration: 2s;
+}
+
+@keyframes slideLeftCard {
+    from {
+        margin-left: 40%;
+    }
+    to {
+        margin-left: 20%;
+      }
+  }
+
+.card_title{
+    background-color: rgb(83,109,254);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px){
+    .hser-table{
+        position: fixed;
+        transform: translateX(-102%);
+    }
+
+    .hser-card{
+        position: fixed;
+        transform: translateX(-3%);
+    }
+}
+
+
+.btn_clear_form {
+    background: rgb(96,125,139);
+}
+
+.btn_clear_form:hover {
+    color: #fff;
+    background: rgb(96,125,139);
+}
+
+.hser-panel {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    right: -35%;
+    width: 35%;
+    padding-top: 5%;
+    height: 100%;
+    z-index: 1;
+    background: #607d8b98;
+    overflow-x: hidden;
+}
+
+@keyframes panelToLeft {
+    from {
+        right: -35%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes panelToRight {
+    from {
+        right: 0%;
+    }
+    to {
+        right: -35%;
+    }
+}
+.hser-panel-table{
+    width: 90%;
+    margin-left: 5%;
+}
+.panel-x{
+    background: #fff;
+    width: 10%;
+    margin-bottom: 15%;
+}
+.panel-x:hover{
+    background: #607d8b;
+    color: #fff;
+}
+.border {
+    border: 2px solid #536dfe;
+    margin: 2% 2% 2% 2%;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.table_scroll {
+    height: 180px;
+    overflow-y: scroll;
+}
+
+/* .table_scroll table {
+    width: 98%;
+} */
+
+.hser-table-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.hser-btn {
+    background: #fff;
+    border: solid 1px #536dfe;
+    border-radius: 1px 1px 1px 1px;
+    color: #607d8b;
+    font-size: medium;
+    font-family: unset;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hser-btn:hover{
+    background: #607d8b;
+    color: #fff;
+    transition: 0.5s;
+}
