@@ -1,5 +1,6 @@
 # servicio-medico
 Aplicación de Servicio Médico para el Proyecto Socio-tecnológico de 4to año.
+Creada con Laravel.
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
